@@ -1,0 +1,25 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda5 during installation
+UUID=1b25b9d0-2525-45f3-ae9c-ad734d871180 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda2 during installation
+UUID=F029-1707  /boot/efi       vfat    umask=0077      0       1
+# swap was on /dev/sda6 during installation
+UUID=c4ba2566-4227-4aa3-bfd2-a5ee345f55f5 none            swap    sw              0       0
+
+# C Drive
+UUID=8638B30538B2F373  /media/arka/8638B30538B2F373  ntfs-3g  defaults,windows_names,locale=en_US.utf8,comment=x-gvfs-show  0 0
+
+# D drive
+UUID=01CE48973EE91F90  /media/arka/01CE48973EE91F90  ntfs-3g  defaults,windows_names,locale=en_US.utf8,comment=x-gvfs-show  0 0
+
+# E drive
+UUID=01CE489742858030  /media/arka/01CE489742858030  ntfs-3g  defaults,windows_names,locale=en_US.utf8,comment=x-gvfs-show  0 0
+
+# F Drive
+UUID=01CE489745FDDE10  /media/arka/01CE489745FDDE10 ntfs-3g  defaults,windows_names,locale=en_US.utf8,comment=x-gvfs-show  0 0
